@@ -6,7 +6,7 @@ botaoVoce.addEventListener("touchstart", fugir);  // Para toque na tela (celular
 botaoVoce.addEventListener("mouseover", fugir);   // Para mouse (PC)
 
 botaoEu.addEventListener("click", () => {
-    mensagem.textContent = "Você tá certa";
+    mensagem.textContent = "Você vai ganhar uns beijinhos rsrs";
 });
 
 function fugir() {
