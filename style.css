@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(45deg, #ff0000, #ffcc00, #00ff00, #0099ff);
+    background-size: 300% 300%;
+    animation: fundoAnimado 10s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes fundoAnimado {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#botaoVoce {
+    background-color: red;
+    color: white;
+    position: relative;
+}
+
+#botaoEu {
+    background-color: green;
+    color: white;
+}
+
+#mensagem {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+/* Ícones de UNO e Corações animados */
+.fundo-decoracao {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.icone {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.5;
+    animation: flutuar 5s infinite alternate ease-in-out;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(15deg); }
+}
+
+.icone:nth-child(1) { top: 10%; left: 20%; }
+.icone:nth-child(2) { top: 40%; left: 70%; }
+.icone:nth-child(3) { bottom: 10%; left: 50%; }
+.icone:nth-child(4) { bottom: 30%;
